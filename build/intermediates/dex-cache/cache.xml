@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/alessandrorosa/BitBucket/update-android/Update/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b7d524a3aea081822e2b1a23b225cd6921655114">
+        <dex dex="/Users/alessandrorosa/BitBucket/update-android/Update/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_9da59be40f8c8e44ecb6e89203913dfdd8dcb64d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alessandrorosa/BitBucket/update-android/Update/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/alessandrorosa/BitBucket/update-android/Update/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_388e85c37e424177e0e135f077321ec4c496e260/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/alessandrorosa/.android/build-cache/bef7fe86519dc91d77867cfe571a1d04a7a36150/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/Users/alessandrorosa/BitBucket/update-android/Update/app/build/intermediates/pre-dexed/debug/classes_351dcf5ca0e3d34524d861d98cc9df8c4e92c0e3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/alessandrorosa/BitBucket/update-android/Update/update/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecf7b632bd4003c4d1982de500d6487382b7c31a">
+        <dex dex="/Users/alessandrorosa/BitBucket/update-android/Update/app/build/intermediates/pre-dexed/debug/classes_63de54b9c7d7b279cd470c09765d9daae687e844.jar" />
+    </item>
+
+</items>
