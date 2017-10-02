@@ -134,6 +134,7 @@ public class UpdateManager {
 
                 } catch (Exception e) {
                 }
+
             }
 
         }, new Response.ErrorListener() {
@@ -166,19 +167,19 @@ public class UpdateManager {
     }
 
 
-    private void showAlert(final Context context, final Activity activity, Update update, UpdateManager.AlertType alertType) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+    private void showAlert(final Context context, final Activity activity, final Update update, final UpdateManager.AlertType alertType) {
+        final AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setCancelable(false);
 
         switch (alertType) {
             case UPDATE:
 
-                if (!Objects.equals(update.update, UpdateType.OPTIONAL.toString()) || Objects.equals(update.update, UpdateType.OPTIONAL.toString()) && canShowGetUpdate(getMuteFrom())) {
+                if (Objects.equals(update.update, UpdateType.REQUIRED.toString()) || Objects.equals(update.update, UpdateType.OPTIONAL.toString()) && canShowGetUpdate(getMuteFrom())) {
 
-                    String TitleUpdate = "New version " + update.version + " available";
-                    String MessageUpdate = "A new version of " + update.app.name + " is available on the Google Play Store. Get the latest features to bla bla bla..";
-                    String ActionAskLaterTitle = "Ask me later";
-                    String ActionUpdateTitle = "Update";
+                    String TitleUpdate = "Versione " + update.version + " disponibile";
+                    String MessageUpdate = "Una nuova versione di " + update.app.name + " è disponibile sul Google Play Store.\nAggiorna per scoprire le funzionalità introdotte.";
+                    String ActionAskLaterTitle = "Chiedimelo più tardi";
+                    String ActionUpdateTitle = "Aggiorna";
 
                     builder.setTitle(TitleUpdate);
                     builder.setMessage(MessageUpdate);
@@ -209,13 +210,12 @@ public class UpdateManager {
 
                     builder.show();
                 }
-
                 break;
 
             case ALERT:
-                String TitleAlert = "Your App is up to date!";
-                String MessageAlert = "\nWhat's new in this version:\n\n" + update.description;
-                String ActionOkTitle = "Got it";
+                String TitleAlert = "La tua app è aggiornata!";
+                String MessageAlert = "\nNovità in questa versione:\n\n" + update.description;
+                String ActionOkTitle = "Ok, ho capito";
 
                 builder.setTitle(TitleAlert);
                 builder.setMessage(MessageAlert);
@@ -228,7 +228,6 @@ public class UpdateManager {
 
                 builder.show();
         }
-
     }
 
 
